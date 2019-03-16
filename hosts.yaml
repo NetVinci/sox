@@ -1,0 +1,4 @@
+# Define the hosts
+hosts:
+  - public: gogs.henrynetworks.com/
+    private: http://192.168.88.109:3000
