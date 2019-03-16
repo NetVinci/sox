@@ -1,0 +1,13 @@
+[Unit]
+Description=Sox Prox Box Service - NetVinci
+After=network.target
+
+[Service]
+Type=simple
+# Another Type option: forking
+ExecStart=/usr/bin/sox -config /etc/sox/hosts.yaml
+Restart=on-failure
+# Other Restart options: or always, on-abort, etc
+
+[Install]
+WantedBy=multi-user.target
